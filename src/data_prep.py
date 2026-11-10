@@ -9,19 +9,6 @@ OUTPUT_DIR = ROOT / "outputs"
 
 TARGET = "Placement_Status"
 
-# Columns removed to avoid data leakage (they are results of placement,
-# or are derived from other columns) or because they carry no information.
-DROP_COLS = [
-    "Student_ID",
-    "Company_Tier",
-    "Career_Field",
-    "Placement_Mode",
-    "Starting_Salary_USD",
-    "Employability_Score",
-    "Interview_Score",
-]
-
-
 def load_data(path=DATA_PATH):
     """Load the CSV and print its shape."""
     df = pd.read_csv(path)
@@ -35,10 +22,19 @@ def clean_data(df):
     df["Placed"] = (df[TARGET] == "Placed").astype(int)
     return df
 
-
 def get_features_and_target(df):
-    """Return one-hot encoded features X and target y (1 = Placed)."""
-    X = df.drop(columns=DROP_COLS + [TARGET, "Placed"])
-    X = pd.get_dummies(X, drop_first=True)
-    y = df["Placed"]
+    """Return explicitly selected features X and target y (1 = Placed)."""
+    
+    # 1. Convert 'Placed' / 'Not Placed' into 1 and 0
+    y = (df[TARGET] == "Placed").astype(int)
+    
+    # 2. Whitelist of strictly academic and skill-based features
+    safe_features = [
+        "CGPA", "Attendance_Percentage", "Study_Hours_Per_Week",
+        "Programming_Skill", "Projects_Completed", "Certifications",
+        "Hackathons", "Internships", "Resume_Score"
+    ]
+    
+    X = df[safe_features]
+    
     return X, y
