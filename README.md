@@ -1,38 +1,46 @@
 # Student Career Success Predictor
 
-Predicts student career outcomes and placement success from 50,000 student academic and skill records using Python (pandas, matplotlib, scikit-learn).
+## Team members
+* **Soham Prashant Phansekar** (2026EEB1415) - Documentation lead
+* **Manpreet Kaur** (2026AIB1057) - PPT lead
+* **Kanaparthi Siva Sai Tanishq** (2026ESB1478) - Execution lead
+* **Manoj Prajapat** (2026MCB1545) - Video lead
+*(Note: Active development is currently being managed by Soham and Manoj).*
 
-* **Course:** AI101: Data Science and AI Essentials with Python, sAIDE, IIT Ropar
-* **Team:** Group 27
-* **Dataset Source:** [Kaggle - Student Career Success Prediction Dataset](https://www.kaggle.com/datasets/mobeenfatimah/student-career-success-prediction-dataset/data) (50,000 rows, 29 columns)
+## Project statement
+Predicting student career outcomes and placement success based on academic performance, skills, and extracurricular activities.
 
-## Team and roles
+## Dataset information and project objectives
+* **Dataset:** `data/student_career_success_dataset.csv` (50,000 rows, 29 columns)
+* **Source:** [Kaggle - Student Career Success Prediction Dataset](https://www.kaggle.com/datasets/mobeenfatimah/student-career-success-prediction-dataset/data)
+* **Target variable:** `Placement_Status` (Placed / Not Placed)
+* **Objective:** To build a complete machine learning pipeline that preprocesses student data, performs exploratory data analysis (EDA), and trains a classification model to predict placement outcomes.
 
-| Member | Entry no. | Role | GitHub Handle |
-| :--- | :--- | :--- | :--- |
-| Soham Prashant Phansekar | 2026EEB1415 | Documentation lead | @[YOUR_GITHUB_USERNAME] |
-| Manpreet Kaur | 2026AIB1057 | PPT lead | @[MANPREET_GITHUB_USERNAME] |
-| Kanaparthi Siva Sai Tanishq | 2026ESB1478 | Execution lead | @[TANISHQ_GITHUB_USERNAME] |
-| Manoj Prajapat | 2026MCB1545 | Video lead | @[MANOJ_GITHUB_USERNAME] |
+## Project workflow
+1. **Data loading and preprocessing:** Read the CSV using pandas, handle categorical variables, and define the target.
+2. **Exploratory data analysis (EDA):** Generate visualizations for status distribution, CGPA impact, internship rates, and feature correlations.
+3. **Model training:** Split the data into training and testing sets, then train a machine learning classification model.
+4. **Evaluation:** Output accuracy metrics and save all visualization plots automatically.
 
-Code contributions are tracked in the repository commit history.
+## Technologies used
+* **Language:** Python 3.10+
+* **Libraries:** pandas, matplotlib, scikit-learn
 
-## Project structure
+## Project structure, installation and execution
 
-* `student-career-success-predictor/`
-  * `data/student_career_success_dataset.csv` — 50,000 rows, 29 columns (student records)
-  * `src/main.py` — Entry point to run preprocessing, model, and plots
-  * `src/model.py` — Model training and evaluation functions
-  * `outputs/` — Generated plots and evaluation figures saved here
-  * `docs/Group27_slides.pdf` — 5-slide project presentation
-  * `requirements.txt` — Pinned Python library versions
-  * `README.md` — Project documentation and setup guide
+**Structure:**
+* `data/student_career_success_dataset.csv` — Raw dataset
+* `src/main.py` — Main entry point to run the pipeline
+* `src/data_prep.py` — Directory paths and dataset configurations
+* `src/plots.py` — Exploratory data analysis and visualization functions
+* `src/model.py` — Machine learning model training and evaluation
+* `outputs/` — Auto-generated charts and results (`.png` files)
+* `docs/Group27_slides.pdf` — Project presentation slides
+* `requirements.txt` — Pinned Python dependencies
+* `README.md` — Project documentation
 
-## Setup
-
-Tested on Python 3.10 and 3.11 (Windows, macOS, Ubuntu).
-
-    git clone [https://github.com/](https://github.com/)[YOUR_GITHUB_USERNAME]/student-career-success-predictor.git
+**Installation:**
+    git clone https://github.com/[YOUR_GITHUB_USERNAME]/student-career-success-predictor.git
     cd student-career-success-predictor
     python -m venv venv
     # On Linux/macOS:
@@ -41,25 +49,24 @@ Tested on Python 3.10 and 3.11 (Windows, macOS, Ubuntu).
     venv\Scripts\activate
     pip install -r requirements.txt
 
-## How to run
+**Execution:**
+    python src/main.py
 
-1. Run `python src/main.py` from the repository root folder.
-2. The script loads `data/student_career_success_dataset.csv`, trains the machine learning model, prints evaluation metrics, and saves 2 plots in `outputs/`.
-3. Expected runtime: under 30 seconds.
+*(All generated plots will automatically save to the `outputs/` folder without requiring manual uploads).*
 
-## Expected output
+## Model evaluation and result
+* **Model used:** [Insert Model Name, e.g., Random Forest Classifier]
+* **Accuracy score:** [Insert Accuracy Score]%
+* **Key findings:** [Insert a 1-sentence summary, e.g., CGPA and Internship counts were the strongest predictors of placement success].
 
-    Loaded data/student_career_success_dataset.csv: 50000 rows, 29 columns
-    Model trained successfully | Test Score: [SCORE]
-    Saved outputs/career_distribution.png
-    Saved outputs/feature_importance.png
+## Presentation and demonstrations
+* **Presentation slides:** `docs/Group27_slides.pdf`
+* **Demonstration video:** [Insert Unlisted YouTube or Google Drive Link Here]
 
-## Links
+## AI usage disclosure
+* **Gemini:** Used by Soham Prashant Phansekar to draft the README.md structure and assist with Python script organization.
+* **Claude:** Used by Manoj Prajapat to write the exploratory data analysis and plotting functions (`src/plots.py`).
+* No AI was used to generate the dataset or falsify the final evaluation results.
 
-* **Slides (5):** `docs/Group27_slides.pdf`
-* **Video (max 5:00):** [INSERT UNLISTED YOUTUBE OR PUBLIC DRIVE LINK]
-
-## AI-use disclosure
-
-* **Gemini:** Used to draft the README.md structure and assist with Python script templates; reviewed, tested, and edited by Soham Prashant Phansekar and Manoj Prajapat.
-* No AI was used to generate the dataset or the final evaluation results.
+## Acknowledgment
+Developed for the AI101 course at the Indian Institute of Technology Ropar.
