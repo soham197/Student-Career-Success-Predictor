@@ -4,10 +4,10 @@
 
 | Member | Entry no. | Role | GitHub Handle |
 | :--- | :--- | :--- | :--- |
-| Soham Prashant Phansekar | 2026EEB1415 | Documentation lead | @[YOUR_GITHUB_USERNAME] |
-| Manpreet Kaur | 2026AIB1057 | PPT lead | @[MANPREET_GITHUB_USERNAME] |
-| Kanaparthi Siva Sai Tanishq | 2026ESB1478 | Execution lead | @[TANISHQ_GITHUB_USERNAME] |
-| Manoj Prajapat | 2026MCB1545 | Video lead | @[MANOJ_GITHUB_USERNAME] |
+| Soham Prashant Phansekar | 2026EEB1415 | Documentation lead | @soham197 |
+| Manpreet Kaur | 2026AIB1057 | PPT lead | @2026aib1057-1762 |
+| Kanaparthi Siva Sai Tanishq | 2026ESB1478 | Execution lead | @tanishq7585 |
+| Manoj Prajapat | 2026MCB1545 | Video lead | @2026mcb1545-rgb |
 
 ## Project statement
 Predicting student career outcomes and placement success based on academic performance, skills, and extracurricular activities.
