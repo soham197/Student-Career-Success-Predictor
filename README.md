@@ -1,11 +1,13 @@
 # Student Career Success Predictor
 
 ## Team members
-* **Soham Prashant Phansekar** (2026EEB1415) - Documentation lead
-* **Manpreet Kaur** (2026AIB1057) - PPT lead
-* **Kanaparthi Siva Sai Tanishq** (2026ESB1478) - Execution lead
-* **Manoj Prajapat** (2026MCB1545) - Video lead
-*(Note: Active development is currently being managed by Soham and Manoj).*
+
+| Member | Entry no. | Role | GitHub Handle |
+| :--- | :--- | :--- | :--- |
+| Soham Prashant Phansekar | 2026EEB1415 | Documentation lead | @[YOUR_GITHUB_USERNAME] |
+| Manpreet Kaur | 2026AIB1057 | PPT lead | @[MANPREET_GITHUB_USERNAME] |
+| Kanaparthi Siva Sai Tanishq | 2026ESB1478 | Execution lead | @[TANISHQ_GITHUB_USERNAME] |
+| Manoj Prajapat | 2026MCB1545 | Video lead | @[MANOJ_GITHUB_USERNAME] |
 
 ## Project statement
 Predicting student career outcomes and placement success based on academic performance, skills, and extracurricular activities.
@@ -64,8 +66,7 @@ Predicting student career outcomes and placement success based on academic perfo
 * **Demonstration video:** [Insert Unlisted YouTube or Google Drive Link Here]
 
 ## AI usage disclosure
-* **Gemini:** Used by Soham Prashant Phansekar to draft the README.md structure and assist with Python script organization.
-* **Claude:** Used by Manoj Prajapat to write the exploratory data analysis and plotting functions (`src/plots.py`).
+* **Gemini:** Used to draft the README.md structure, assist with Python script organization, and write the exploratory data analysis and plotting functions; reviewed, tested, and edited by the team.
 * No AI was used to generate the dataset or falsify the final evaluation results.
 
 ## Acknowledgment
