@@ -43,7 +43,7 @@ Predicting student career outcomes and placement success based on academic perfo
 
 **Installation:**
 
-    git clone https://github.com/[YOUR_GITHUB_USERNAME]/student-career-success-predictor.git
+    git clone https://github.com/soham197/student-career-success-predictor.git
     cd student-career-success-predictor
     python -m venv venv
     # On Linux/macOS:
