@@ -58,10 +58,22 @@ Predicting student career outcomes and placement success based on academic perfo
 
 *(All generated plots will automatically save to the `outputs/` folder without requiring manual uploads).*
 
-## Model evaluation and result
-* **Model used:** [Insert Model Name, e.g., Random Forest Classifier]
-* **Accuracy score:** [Insert Accuracy Score]%
-* **Key findings:** [Insert a 1-sentence summary, e.g., CGPA and Internship counts were the strongest predictors of placement success].
+## Model Evaluation and Results
+
+After removing post-placement variables to prevent data leakage, the models achieved highly realistic predictive performance using strictly pre-placement academic and skill-based features.
+
+* **Best Performing Model:** Logistic Regression
+* **Overall Accuracy:** 81.49%
+* **Overall F1-Score:** 0.8889
+
+**Key Metrics (Logistic Regression):**
+* **Placed Students:** 84% Precision | 95% Recall
+* **Not Placed Students:** 65% Precision | 34% Recall
+
+**Key Insights:**
+* Logistic Regression slightly outperformed the Random Forest classifier (which achieved 80.75% accuracy).
+* The model is exceptionally strong at identifying students who will successfully secure placement (95% recall for the 'Placed' class).
+* Based on feature importance analysis, the top 5 most critical predictors for student placement are: **CGPA, Attendance Percentage, Resume Score, Study Hours Per Week, and Projects Completed**.
 
 ## Presentation and demonstrations
 * **Presentation slides:** `docs/Group27_slides.pdf`
