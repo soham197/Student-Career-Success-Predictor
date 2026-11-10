@@ -42,6 +42,7 @@ Predicting student career outcomes and placement success based on academic perfo
 * `README.md` — Project documentation
 
 **Installation:**
+
     git clone https://github.com/[YOUR_GITHUB_USERNAME]/student-career-success-predictor.git
     cd student-career-success-predictor
     python -m venv venv
@@ -52,6 +53,7 @@ Predicting student career outcomes and placement success based on academic perfo
     pip install -r requirements.txt
 
 **Execution:**
+
     python src/main.py
 
 *(All generated plots will automatically save to the `outputs/` folder without requiring manual uploads).*
