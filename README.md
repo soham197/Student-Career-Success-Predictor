@@ -31,26 +31,27 @@ Predicting student career outcomes and placement success based on academic perfo
 ## Project structure, installation and execution
 
 **Structure:**
-* `data/student_career_success_dataset.csv` — Raw dataset
-* `src/main.py` — Main entry point to run the pipeline
-* `src/data_prep.py` — Directory paths and dataset configurations
-* `src/plots.py` — Exploratory data analysis and visualization functions
-* `src/model.py` — Machine learning model training and evaluation
-* `outputs/` — Auto-generated charts and results (`.png` files)
-* `docs/Group27_slides.pdf` — Project presentation slides
-* `requirements.txt` — Pinned Python dependencies
-* `README.md` — Project documentation
+- `data/student_career_success_dataset.csv` — Raw dataset
+- `src/main.py` — Main entry point to run the pipeline
+- `src/data_prep.py` — Directory paths and dataset configurations
+- `src/plots.py` — Exploratory data analysis and visualization functions
+- `src/model.py` — Machine learning model training and evaluation
+- `outputs/` — Auto-generated charts and results (`.png` files)
+- `docs/Student_Career_Success_Predictor(Group_27).pdf` — Project presentation slides
+- `requirements.txt` — Pinned Python dependencies
+- `README.md` — Project documentation
 
 **Installation:**
 
-    git clone https://github.com/soham197/student-career-success-predictor.git
-    cd student-career-success-predictor
-    python -m venv venv
-    # On Linux/macOS:
-    source venv/bin/activate
-    # On Windows:
-    venv\Scripts\activate
-    pip install -r requirements.txt
+```bash
+git clone [https://github.com/soham197/student-career-success-predictor.git](https://github.com/soham197/student-career-success-predictor.git)
+cd student-career-success-predictor
+python -m venv venv
+# On Linux/macOS:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+pip install -r requirements.txt
 
 **Execution:**
 
@@ -80,8 +81,9 @@ After removing post-placement variables to prevent data leakage, the models achi
 * **Demonstration video:** https://drive.google.com/drive/folders/1o-h6EfeleglocYYfeaSDLOE2paJuvBON
 
 ## AI usage disclosure
-* **Gemini:** Used to draft the README.md structure, assist with Python script organization, and write the exploratory data analysis and plotting functions; reviewed, tested, and edited by the team.
-* No AI was used to generate the dataset or falsify the final evaluation results.
+- **ChatGPT:** Used for PPT drafts and slide outlines.
+- **Gemini:** Used to draft the README.md structure, assist with Python script organization, and write the exploratory data analysis and plotting functions; reviewed, tested, and edited by the team.
+- No AI was used to generate the dataset or falsify the final evaluation results.
 
 ## Acknowledgment
 Developed for the AI101 course at the Indian Institute of Technology Ropar.
