@@ -76,8 +76,8 @@ After removing post-placement variables to prevent data leakage, the models achi
 * Based on feature importance analysis, the top 5 most critical predictors for student placement are: **CGPA, Attendance Percentage, Resume Score, Study Hours Per Week, and Projects Completed**.
 
 ## Presentation and demonstrations
-* **Presentation slides:** `docs/Group27_slides.pdf`
-* **Demonstration video:** [Insert Unlisted YouTube or Google Drive Link Here]
+* **Presentation slides:** `docs/Student_Career_Success_Predictor(Group_27).pdf`
+* **Demonstration video:** https://drive.google.com/drive/folders/1o-h6EfeleglocYYfeaSDLOE2paJuvBON
 
 ## AI usage disclosure
 * **Gemini:** Used to draft the README.md structure, assist with Python script organization, and write the exploratory data analysis and plotting functions; reviewed, tested, and edited by the team.
