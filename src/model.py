@@ -1,5 +1,5 @@
 #Model Functions
-"""Model training and evaluation."""
+"""Model training and evaluation"""
 import matplotlib
 
 matplotlib.use("Agg")
